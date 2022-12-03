@@ -93,3 +93,19 @@ abstract class User {
 	}
 	
 }
+
+class Customer extends User {
+	
+	Customer(){
+	}
+	
+}
+
+class Admin extends User {
+	
+	Admin(){
+	}
+	
+	
+	
+}
