@@ -111,3 +111,55 @@ class Admin extends User {
 	}
 	
 }
+
+class Flight {
+	
+	String city;
+	int id;
+	// Arrive
+	int aMonth;
+	int aDay;
+	int aHour;
+	int aMinute;
+	// Depart
+	int dMonth;
+	int dDay;
+	int dHour;
+	int dMinute;
+	int capacity;
+	int filled;
+	
+	Flight() {
+	}
+	
+	Flight(int t, String y, int u) {
+		id = t;
+		city = y;
+		capacity = u;
+	}
+	
+	// Setting times
+	public void setArrive(int z, int x, int c, int v) {
+		this.aMonth = z;
+		this.aDay = x;
+		this.aHour = c;
+		this.aMinute = v;
+	}
+	
+	public void setDepart(int z, int x, int c, int v) {
+		this.dMonth = z;
+		this.dDay = x;
+		this.dHour = c;
+		this.dMinute = v;
+	}
+	
+	// Setting seats
+	public void addFilled() {
+		filled++;
+	}
+	
+	public void subFilled() {
+		filled--;
+	}
+	
+}
