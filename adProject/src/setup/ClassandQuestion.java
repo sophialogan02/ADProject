@@ -96,6 +96,8 @@ abstract class User {
 
 class Customer extends User {
 	
+	boolean isAdmin = false;
+	
 	Customer(){
 	}
 	
@@ -103,9 +105,9 @@ class Customer extends User {
 
 class Admin extends User {
 	
+	boolean isAdmin = true;
+	
 	Admin(){
 	}
-	
-	
 	
 }
